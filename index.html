@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JW Player M3U8 Example</title>
+  <!-- Include the latest JW Player library -->
+  <script src="https://cdn.jwplayer.com/libraries/8/jwplayer.js"></script>
+</head>
+<body>
+  <!-- JW Player container -->
+  <div id="player"></div>
+
+  <script>
+    // Initialize JW Player
+    var player = jwplayer("player").setup({
+      // Specify your HLS stream URL
+      file: "http://example.com/path/to/your/stream.m3u8",
+      // Add other player configurations as needed
+      // For example, width, height, autostart, etc.
+      width: "100%",
+      aspectratio: "16:9",
+      autostart: true,
+      controls: true
+    });
+  </script>
+</body>
+</html>
